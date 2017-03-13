@@ -1,4 +1,5 @@
 <?php
-include 'inc/header.php';
-include 'inc/nav.php';
-include 'inc/footer.php';
+require 'inc/header.php';
+require 'inc/nav.php';
+require_once 'inc/footer.php';
+?>
