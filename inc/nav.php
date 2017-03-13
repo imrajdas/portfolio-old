@@ -1,19 +1,39 @@
-<div class="ui secondary pointing menu">
-  <a class="item">
-    Home
-  </a>
-  <a class="item">
-    Messages
-  </a>
-  <a class="item active">
-    Friends
-  </a>
-  <div class="right menu">
-    <a class="ui item">
-      Logout
-    </a>
-  </div>
-</div>
-<div class="ui segment">
-  <p></p>
+<div class="container-fluid">
+<nav class="navbar navbar-default">
+     <div class="container">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Brand</a>
+       </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Works</a></li>
+           <li><a href="#">News</a></li>
+           <li><a href="#">Contact</a></li>
+           <li>
+             <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</a>
+           </li>
+         </ul>
+         <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+           <li><a href="#">Web design</a></li>
+           <li><a href="#">Development</a></li>
+           <li><a href="#">Graphic design</a></li>
+           <li><a href="#">Print</a></li>
+           <li><a href="#">Motion</a></li>
+           <li><a href="#">Mobile apps</a></li>
+         </ul>
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container -->
+   </nav><!-- /.navbar -->
 </div>
