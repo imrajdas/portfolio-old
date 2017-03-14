@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/map.css">
     <script type="text/javascript" src="js/map.js"></script>
-  
+
   </head>
   <body>
