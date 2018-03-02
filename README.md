@@ -1,15 +1,18 @@
-# Portfolio
-At the root directory
+# Portfolio based on ExpressJs with some custom animation
 
-1.npm install
-
-2.npm start
-
-3.Go to localhost:3000
-
-#AUTHOR
+## Live Links:
+```
+http://rajdas.herokuapp.com/
+```
+### Installation
+```
+npm install
+npm start
+Go to localhost:3000
+```
+### Created and maintained by:
+```
 Raj Das
-
 fb.com/imrajdas
-
 github.com/imrajdas
+```
