@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('sitemap.xml', function(req, res, next) {
+    res.render('sitemap');
+  });
+
 module.exports = router;
