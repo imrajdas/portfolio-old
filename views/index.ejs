@@ -4,22 +4,85 @@
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-4">
                         <img src="https://scontent-maa2-1.cdninstagram.com/vp/28f4133e1f4416ebb654462cc504828d/5E0888AF/t51.2885-15/e35/70312071_730837420711479_2194648330454122137_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&_nc_cat=103" style="width: 200px; height: 200px;" class="rounded-circle" alt="Cinque Terre">
                     </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <h3 class="display-4">Raj Babu Das</h3>
                         <p class="lead"><b>Software Engineer at MayaData Inc.</b></p>
+                        <div class="icons">
+                                <a href="https://medium.com/@rajdas98" target="_blank"><img src="https://img.icons8.com/color/48/000000/medium-logo.png"></a>
+                                <a href="https://linkedin.com/in/rajdas98" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/linkedin.png"></a>
+                                <a href="https://twitter.com/rajdas98" target="_blank"><img src="https://img.icons8.com/dusk/64/000000/twitter.png"></a>
+                                <a href="https://instagram.com/imrajdas" target="_blank"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"></a>
+                                <a href="https://github.com/rajdas98" target="_blank"><img src="https://img.icons8.com/clouds/64/000000/github.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="https://img.icons8.com/officexs/16/000000/contact-card.png"> Contact Me
+                            </button>
+                                
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Send me a message </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <form method="POST" action="send">
+                                        <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="name">Name</label>
+                                                            <input type="name" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="email">Email address</label>
+                                                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">Phone No</label>
+                                                    <input type="phone" class="form-control" name="phone" id="exampleInputPassword1" placeholder="Password">
+                                                    <small id="emailHelp" class="form-text text-muted">I'll never share your phone number with anyone else.</small>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Type sometime good for me:</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" name="msg" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+                                                </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                </div>
+                            </div>
+                  
                     </div>
                 </div>    
             </div>
-            <div class="col">
-                <button class="btn btn-primary">Contact Me</button>
-            </div>
+            
         </div>
+        
     </div>
 </div>
 
+      
 <div class="Container">
     <div class="row">
         <div class="col-md-8">
@@ -29,54 +92,83 @@
                     <p class="card-text">2+ years of experience with AWS, GCP, Serverless, DevOps, Chaos Engineering and a technical blogger at Medium</p>
                 </div>
             </div>
-                
-        </div>
-        <div class="col-md-4">
+            <br>
+
+            <div class="card">
+                    <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="card-title"><b>My Github</b></h5>
+                                </div>
+                                <div class="col-md-8">
+                                    <a class="github-button" href="https://github.com/rajdas98" data-size="large" data-show-count="true" aria-label="Follow @rajdas98 on GitHub">Follow @rajdas98</a>
+                                </div>
+                            </div>
+                            <div class="calendar"> Loading... </div>
+                            <br>
+                            <div id="feed" style="height: 500px"></div>
+                    </div>
+                        
+            </div> <br>
+
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Bangalore, India</h5>
-                    <h5 class="card-title">mail.rajdas@gmail.com</h5>
-                    <h5 class="card-title">www.medium.com/@rajdas98</h5>
+                    <div class="card-title"><h3> <b> EXPERIENCE </b> </h3></div>
 
                 </div>
             </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h5 class="card-title"><b>My Github</b></h5>
-                            </div>
-                            <div class="col-md-8">
-                                <a class="github-button" href="https://github.com/rajdas98" data-size="large" data-show-count="true" aria-label="Follow @rajdas98 on GitHub">Follow @rajdas98</a>
-                            </div>
-                        </div>
-                        <div class="calendar"> Loading... </div>
-                        <br>
-                        <div id="feed" style="height: 500px"></div>
-                </div>
-                    
-            </div>
         </div>
         <div class="col-md-4">
+            <div class="card scroll_hori">
+                <div class="card-body">
+                    <h5 class="card-title"><img src="https://img.icons8.com/nolan/32/000000/worldwide-location.png">Bangalore, India</h5>
+                    <h5 class="card-title"><img src="https://img.icons8.com/nolan/32/000000/email.png"> mail.rajdas@gmail.com</h5>
+                    <h5 class="card-title"><img src="https://img.icons8.com/ios-glyphs/30/000000/medium-monogram.png"> www.medium.com/@rajdas98</h5>
+
+                </div>
+            </div><br>
+
             <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">SKILLS</h5>
-                        <h5 class="card-title">mail.rajdas@gmail.com</h5>
-                        <h5 class="card-title">www.medium.com/@rajdas98</h5>
-    
+                        <span>Serverless</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div><br>  
+                        <span>AWS & GCP</span> 
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div><br> 
+                        <span>DevOps & Kubernetes & Docker</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div><br> 
+                        <span>NodeJs & GoLang</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> 
                     </div>
+            </div><br>
+
+            <div class="scroll card">
+                <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-title"><b>My Tweets</b></div>
+                            </div>
+                            <div class="col">
+                                    <a href="https://twitter.com/rajdas98?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @rajdas98</a>
+                            </div>
+                        </div>
+                        <a class="twitter-timeline" href="https://twitter.com/rajdas98?ref_src=twsrc%5Etfw">Tweets by rajdas98</a>
+                </div>
             </div>
+
         </div>
     </div>
 </div>
+
+
 <%- include('footer'); -%>
 
 <script>
@@ -91,3 +183,4 @@
     GitHubCalendar(".calendar", "rajdas98", { responsive: true });
 
 </script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

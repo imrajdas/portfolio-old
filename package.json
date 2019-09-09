@@ -26,7 +26,10 @@
   },
   "homepage": "https://github.com/rajdas98/portfolio#readme",
   "dependencies": {
+    "@slack/client": "^5.0.2",
+    "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sweetalert": "^2.1.2"
   }
 }
