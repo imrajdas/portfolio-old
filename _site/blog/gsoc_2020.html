@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog | &lt; Raj Babu Das &gt;</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Blog" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="/blog/gsoc_2020" />
+<meta property="og:url" content="/blog/gsoc_2020" />
+<meta property="og:site_name" content="&lt; Raj Babu Das &gt;" />
+<script type="application/ld+json">
+{"url":"/blog/gsoc_2020","headline":"Blog","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="&lt; Raj Babu Das &gt;" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">&lt; Raj Babu Das &gt;</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/blog/gsoc_2020">Blog</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Blog</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="gsoc20-report--cncfprometheus">GSoC’20 Report- CNCF(Prometheus)</h2>
+
+<h3 id="introduction">Introduction</h3>
+<p>Hello everyone, I am here to present my GSoC 2020 report under CNCF. My contributions/work can be viewed at  <a href="https://github.com/prometheus/test-infra">prometheus/test-infra</a> and <a href="https://prombench.prometheus.io">prombench.prometheus.io</a>. Also I will be continuing my contributions after the GSoC period</p>
+
+<blockquote>
+  <p>I would like to give a huge thanks to my mentor, who continuously helped me to complete this awesome journey.</p>
+</blockquote>
+
+<h3 id="links">Links:</h3>
+<ul>
+  <li>My Evaluations:
+    <ul>
+      <li><a href="/evaluations/eval1.png">First Evaluation</a></li>
+      <li><a href="/evaluations/eval2.png">Second Evaluation</a></li>
+      <li><a href="/evaluations/eval3.png">Final Evaluation</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>GSoC Project URL <br />
+<a href="https://summerofcode.withgoogle.com/archive/2020/projects/4546170073907200/">https://summerofcode.withgoogle.com/archive/2020/projects/4546170073907200/</a></p>
+  </li>
+  <li>
+    <p>CNCF Blog Post <br />
+<a href="https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020">https://www.cncf.io/blog/2020/09/17/16-cncf-interns-graduate-from-summer-of-code-gsoc-2020/</a></p>
+  </li>
+  <li>
+    <p>Certificate <br />
+<a href="/evaluations/Completion_2020_0234.pdf">Completion_2020_0234.pdf</a></p>
+  </li>
+  <li>Completion Letter <br />
+ <a href="/evaluations/GSoC 2020 Certificate GSoC20200234.pdf">GSoC 2020 Certificate GSoC20200234.pdf</a></li>
+</ul>
+
+<h3 id="what-did-i-solve">What did I solve?</h3>
+<ol>
+  <li>
+    <p>Develop prometheus benchmark infrastructure with KIND</p>
+
+    <p><b>Description:</b> Currently, prombench is deployed on GKE which takes a lot of time and resources. To overcome this we got a solution to use KIND for deployment of prombench on local/virtual machine, which is very fast as compared to GKE and useful to run it locally.</p>
+    <ul>
+      <li>Issue(s): <a href="https://github.com/prometheus/test-infra/issues/333" target="_blank">prometheus/test-infra/issue#333</a></li>
+      <li>PR(s): <a href="https://github.com/prometheus/test-infra/pull/390" target="_blank">prometheus/test-infra/pull#390</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Refactor prombench infrastructure and manifest deployable for KIND and EKS.</p>
+
+    <p><b>Description:</b> Due to the tightly coupled of prombench with GKE, we have to refactor both infra and manifests to make it more generic and deployable for both EKS and KIND.</p>
+    <ul>
+      <li>Issue(s): <a href="https://github.com/prometheus/test-infra/issues/371" target="_blank">prometheus/test-infra/issue#371</a></li>
+      <li>PR(s):
+        <ul>
+          <li><a href="https://github.com/prometheus/test-infra/pull/412" target="_blank">prometheus/test-infra/pull#412</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/pull/406" target="_blank">prometheus/test-infra/pull#406</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/pull/391" target="_blank">prometheus/test-infra/pull#391</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/pull/372" target="_blank">prometheus/test-infra/pull#371</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/pull/369" target="_blank">prometheus/test-infra/pull#369</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Fix Node Exporter to show the metrics related to SSD</p>
+
+    <p><b>Description:</b> Node Exporter is not showing metrics related to SSD. To fix this we need to upgrade node exporter and add a new flag called “–path.rootfs”</p>
+    <ul>
+      <li>Issue(s):
+        <ul>
+          <li><a href="https://github.com/prometheus/test-infra/issues/159" target="_blank">prometheus/test-infra/issue#159</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/issues/328" target="_blank">prometheus/test-infra/issue#328</a></li>
+        </ul>
+      </li>
+      <li>PR(s): <a href="https://github.com/prometheus/test-infra/pull/408" target="_blank">prometheus/test-infra/pull#408</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Add descriptions to the Grafana dashboard regarding prombench</p>
+
+    <p><b>Description:</b> Current Grafana dashboard is not having the descriptions of prombench, which will be difficult for a new user to understand.</p>
+    <ul>
+      <li>Issue(s):
+        <ul>
+          <li><a href="https://github.com/prometheus/test-infra/issues/328" target="_blank">prometheus/test-infra/issue#328</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/issues/305" target="_blank">prometheus/test-infra/issue#305</a></li>
+        </ul>
+      </li>
+      <li>Doc(s): <a href="https://docs.google.com/document/d/1FKLUkCcaTgC72Dh-Kz66228PykCwG4zy2Tw7zD_491k">Descriptions for Prombench Graphana Dashboard</a></li>
+      <li>PR(s): <a href="https://github.com/prometheus/test-infra/pull/428" target="_blank">prometheus/test-infra/pull#428</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Increase Retention period of loki to 90 days</p>
+
+    <p><b>Note:</b> This task is not a priority, so I will complete it after the gsoc period. BTW, a PR has been raised to solve this issue.</p>
+    <ul>
+      <li>Issue(s):
+        <ul>
+          <li><a href="https://github.com/prometheus/test-infra/issues/322" target="_blank">prometheus/test-infra/issue#322</a></li>
+          <li><a href="https://github.com/prometheus/test-infra/issues/328" target="_blank">prometheus/test-infra/issue#328</a></li>
+        </ul>
+      </li>
+      <li>PR(s): <a href="https://github.com/prometheus/test-infra/pull/423" target="_blank">prometheus/test-infra/pull#423</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="extra-fixes">Extra fixes</h2>
+<ol>
+  <li>PR: <a href="https://github.com/prometheus/test-infra/pull/432">prometheus/test-infra/pull#432</a></li>
+  <li>PR: <a href="https://github.com/prometheus/test-infra/pull/433">prometheus/test-infra/pull#433</a></li>
+</ol>
+
+<h3 id="what-did-i-learn">What did I learn?</h3>
+<ol>
+  <li>First and most important- Architecture of Prometheus and infrastructure of prombench</li>
+  <li>Good maintenance of code repository</li>
+  <li>KIND(Kubernetes In Docker) architecture and usage of its go pkg.</li>
+  <li>Have patience for PR reviews :smiley:</li>
+</ol>
+
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">&lt; Raj Babu Das &gt;</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">&lt; Raj Babu Das &gt;</li><li><a class="u-email" href="mailto:mail.rajdas@gmail.com">mail.rajdas@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rajdas98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rajdas98</span></a></li><li><a href="https://www.twitter.com/rajdas98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">rajdas98</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
