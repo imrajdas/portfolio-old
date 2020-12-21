@@ -28,7 +28,7 @@ twitter_username: rajdas98
 github_username:  rajdas98
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   # Write an awesome description for your new site here. You can edit this
