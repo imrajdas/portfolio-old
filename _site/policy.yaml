@@ -1,0 +1,79 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  annotations:
+    meta.helm.sh/release-name: kyverno
+    meta.helm.sh/release-namespace: kyverno
+    policies.kyverno.io/category: Pod Security Standards (Default)
+    policies.kyverno.io/description: Access to host ports allows potential snooping
+      of network traffic and should not be allowed, or at minimum restricted to a
+      known list.
+  creationTimestamp: "2021-02-04T20:00:53Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  managedFields:
+  - apiVersion: kyverno.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:meta.helm.sh/release-name: {}
+          f:meta.helm.sh/release-namespace: {}
+          f:policies.kyverno.io/category: {}
+          f:policies.kyverno.io/description: {}
+        f:labels:
+          .: {}
+          f:app.kubernetes.io/managed-by: {}
+      f:spec:
+        .: {}
+        f:background: {}
+        f:validationFailureAction: {}
+    manager: Go-http-client
+    operation: Update
+    time: "2021-02-04T20:00:53Z"
+  - apiVersion: kyverno.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        f:rules: {}
+      f:status:
+        .: {}
+        f:averageExecutionTime: {}
+        f:ruleStatus: {}
+        f:rulesAppliedCount: {}
+    manager: kyverno
+    operation: Update
+    time: "2021-02-08T07:25:15Z"
+  name: disallow-host-ports
+  resourceVersion: "25974"
+  selfLink: /apis/kyverno.io/v1/clusterpolicies/disallow-host-ports
+  uid: da38a2d3-451f-48ff-8ab2-370538669cc2
+spec:
+  background: true
+  rules:
+  - match:
+      resources:
+        kinds:
+        - Pod
+    name: host-ports
+    validate:
+      message: Use of host ports is disallowed. The fields spec.containers[*].ports[*].hostPort
+        and spec.initContainers[*].ports[*].hostPort must be empty.
+      pattern:
+        spec:
+          =(initContainers):
+          - =(ports):
+            - X(hostPort): 0
+          containers:
+          - =(ports):
+            - X(hostPort): 0
+  validationFailureAction: audit
+status:
+  averageExecutionTime: 59.791µs
+  ruleStatus:
+  - appliedCount: 388
+    averageExecutionTime: 59.791µs
+    ruleName: host-ports
+  rulesAppliedCount: 388
