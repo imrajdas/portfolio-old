@@ -47,7 +47,6 @@ metadata:
     operation: Update
     time: "2021-02-08T07:25:15Z"
   name: disallow-host-ports
-  resourceVersion: "25974"
   selfLink: /apis/kyverno.io/v1/clusterpolicies/disallow-host-ports
   uid: da38a2d3-451f-48ff-8ab2-370538669cc2
 spec:
